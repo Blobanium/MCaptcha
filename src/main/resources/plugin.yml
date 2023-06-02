@@ -1,0 +1,4 @@
+name: MCaptcha
+version: '${version}'
+main: io.github.blobanium.mcaptcha.MCaptcha
+api-version: 1.19
