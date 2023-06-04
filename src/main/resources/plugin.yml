@@ -2,3 +2,8 @@ name: MCaptcha
 version: '${version}'
 main: io.github.blobanium.mcaptcha.MCaptcha
 api-version: 1.19
+commands:
+  captcha:
+    description: your mom
+    usage: /<command> <player>
+    permission: mcaptcha.captcha

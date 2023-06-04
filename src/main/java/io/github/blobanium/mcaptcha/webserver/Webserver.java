@@ -20,7 +20,7 @@ public class Webserver {
     private static HttpServer server;
 
     public static void start() throws Exception {
-        server = HttpServer.create(new InetSocketAddress(8073), 0);
+        server = HttpServer.create(new InetSocketAddress(Integer.parseInt(Config.webserver_port)), 0);
         server.createContext("/test", new MyHandler());
         server.createContext("/complete", new MyHandler2());
         server.setExecutor(java.util.concurrent.Executors.newCachedThreadPool()); // creates a default executor

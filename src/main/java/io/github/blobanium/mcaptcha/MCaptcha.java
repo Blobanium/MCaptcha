@@ -1,5 +1,6 @@
 package io.github.blobanium.mcaptcha;
 
+import io.github.blobanium.mcaptcha.command.CaptchaCommand;
 import io.github.blobanium.mcaptcha.config.Config;
 import io.github.blobanium.mcaptcha.webserver.Webserver;
 import org.bukkit.Bukkit;
@@ -22,6 +23,7 @@ public final class MCaptcha extends JavaPlugin {
         saveConfig();
 
         Config.load(config);
+        this.getCommand("captcha").setExecutor(new CaptchaCommand());
 
         try {
             Webserver.start();
