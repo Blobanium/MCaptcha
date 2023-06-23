@@ -30,3 +30,6 @@ Next you want to go to your configuration file, you will find 4 options all of t
 
 
 Now once all of that is done try to captcha someone on your server by doing `/captcha <user>`
+
+## The Captcha Process
+Once the captcha command has been sent, they will be shown a message saying "Captcha Required" and the player will be frozen. They must click on a link sent in their chat (in the form of a message). This will open the Captcha Challenge Page that is being hosted on your webserver. They must pass the captcha challenge before clicking submit.
